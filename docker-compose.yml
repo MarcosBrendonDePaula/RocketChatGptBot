@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  rocketgpt:
+    build:
+      context: ./RocketBotGPT
+      dockerfile: Dockerfile
+    environment:
+      OPENAI_API_KEY: "sk-"
+      BOT_NAME: ""
+      BOT_PASS: ""
+      ROCKET_URL: ""
